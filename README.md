@@ -1,18 +1,20 @@
 # abstract-art-classification
 
-## Getting Started
+This is my final project for the Fall 2019 offering of the course CS230: Deep Learning at Stanford University.
+
+CNNs generally perform well on many image classification tasks that require distinguishing between the objects represented by images. However, I hypothesize that the problem of distinguishing between professional amateur abstract artwork cannot be so easily solvable by standard CNN architectures. Therefore, in this project I address the problem of distinguishing between professional and amateur abstract artwork using different CNN architectures and deep learning techniques.
 
 ## Data
 
 To download the DeviantArt and MART datasets, please contact me at sharmant@stanford.edu. Once you have downloaded the datasets, run
 
-  python3 preprocess.py
+```python3 preprocess.py```
   
 to preprocess, augment, and pickle the train, dev, and test datasets.
 
 ## Models
 
-The baseline model is defined in baseline.py, and the shallow model is defined in shallow.py.
+The Baseline model is defined in `baseline.py`, and the Shallow model is defined in `shallow.py`.
 
 ### Baseline Model
 
@@ -61,14 +63,14 @@ The shallow model has the following architecture:
 
 To run the baseline with all default arguments, run
 
-  python3 baseline.py
+```python3 baseline.py```
 
 To run the shallow model with all default arguments, run
 
-  python3 shallow.py
+```python3 shallow.py```
   
 Examples of running the baseline and shallow models with custom parameters for learning rate and dropout probability are as follows:
 
-  python baseline.py --lr 0.001
+```python baseline.py --lr 0.001```
   
-  python shallow.py --dropout 0.4
+```python shallow.py --dropout 0.4```
